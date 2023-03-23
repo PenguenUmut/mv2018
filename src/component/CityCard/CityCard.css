@@ -1,0 +1,101 @@
+.ctable {
+  width: 100%;
+}
+.c1 {
+  width: 15%;
+}
+.c2 {
+  width: 10%;
+}
+.c3 {
+  width: 75%;
+
+  border: 1px solid #00a30722;
+  background: #00000022;
+}
+.c3_bar {
+  background-color: rgb(43, 147, 43);
+  color: white;
+  padding: 5px 0;
+}
+.c3_bar span {
+  padding-left: 10px;
+}
+
+.ctable2 {
+  width: 80%;
+  border: 1px solid #80808080;
+  border-radius: 5px;
+  font-size: 2rem;
+}
+.AKP {
+  background-color: #f8991c;
+  color: white;
+  font-weight: bold;
+}
+.CHP {
+  background-color: #da251d;
+  color: white;
+  font-weight: bold;
+}
+.HDP {
+  background-color: #941c88;
+  color: white;
+  font-weight: bold;
+}
+.MHP {
+  background-color: #910700;
+  color: white;
+  font-weight: bold;
+}
+.İYİP {
+  background-color: #00aafc;
+  color: white;
+  font-weight: bold;
+}
+.SP {
+  background-color: #67120d;
+  color: white;
+  font-weight: bold;
+}
+.HUDAPAR {
+  background-color: #00973a;
+  color: white;
+  font-weight: bold;
+}
+.VATAN {
+  background-color: #000602;
+  color: white;
+  font-weight: bold;
+}
+.Bağımsız {
+  background-color: #424242;
+  color: white;
+  font-weight: bold;
+}
+.right {
+  text-align: right;
+}
+.center {
+  text-align: center;
+}
+.bold {
+  font-weight: bold;
+}
+.ctable3 {
+  width: 100%;
+  border: 1px solid #80808080;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+.ctable3 .won {
+  color: #db0000;
+}
+.ctable3 .mvcount {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.ctable3 .mvvotecount {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
