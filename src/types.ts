@@ -25,3 +25,8 @@ export type CITY = {
   union2Vote: number;
   parliamentarianCount: number;
 };
+
+export type CITY_TOTAL = CITY & {
+  abroadVotes: number;
+  votesTotal: VOTE[];
+};

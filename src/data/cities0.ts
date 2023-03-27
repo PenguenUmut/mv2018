@@ -1,33 +1,6 @@
-import { CITY, VOTE } from "../types";
+import { CITY } from "../types";
 
-export const citiesAdana: CITY[] = [
-  {
-    id: 1,
-    name: "ADANA",
-    voterCountTotal: 1526827,
-    votesCountTotal: 1313497,
-    votesCountValid: 1289267,
-    votesCountInvalid: 24230,
-    votes: [
-      { partyId: 1, partyName: "AKP", vote: 432103 },
-      { partyId: 2, partyName: "MHP", vote: 150093 },
-      { partyId: 3, partyName: "HUDAPAR", vote: 6992 },
-      { partyId: 4, partyName: "VATAN", vote: 2395 },
-      { partyId: 5, partyName: "HDP", vote: 172831 },
-      { partyId: 6, partyName: "CHP", vote: 337497 },
-      { partyId: 7, partyName: "SP", vote: 13738 },
-      { partyId: 8, partyName: "İYİP", vote: 159022 },
-      { partyId: -1, partyName: "Bağımsız 1", vote: 279 },
-      { partyId: -2, partyName: "Bağımsız 2", vote: 134 },
-    ],
-    // bagimsiz_toplam_oy: 413,
-    union1Vote: 11404,
-    union2Vote: 2779,
-    parliamentarianCount: 15,
-  },
-];
-
-export const cities: CITY[] = [
+export const cities0: CITY[] = [
   {
     id: 1,
     name: "ADANA",
@@ -2011,19 +1984,3 @@ export const cities: CITY[] = [
     parliamentarianCount: 5,
   },
 ];
-
-export const others: VOTE[] = [
-  { partyId: 1, partyName: "AKP", vote: 767927 + 11086 },
-  { partyId: 2, partyName: "MHP", vote: 118895 + 1656 },
-  { partyId: 3, partyName: "HUDAPAR", vote: 1890 },
-  { partyId: 4, partyName: "VATAN", vote: 4023 },
-  { partyId: 5, partyName: "HDP", vote: 260680 },
-  { partyId: 6, partyName: "CHP", vote: 265754 + 1545 },
-  { partyId: 7, partyName: "SP", vote: 11324 + 59 },
-  { partyId: 8, partyName: "İYİP", vote: 60618 + 352 },
-];
-
-// export const abroadVotes = 48631366;
-// export const domesticVotes = 1505809;
-// export const totalVotes = 48631366 + 1505809;
-// export const voteRatio = 0.03; // Math.round((domesticVotes / totalVotes) * 100) / 100;

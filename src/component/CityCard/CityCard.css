@@ -99,3 +99,9 @@
   font-size: 1.25rem;
   font-weight: bold;
 }
+
+.ctable3 .rscount {
+  color: gray;
+  font-weight: bold;
+  opacity: 0.6;
+}

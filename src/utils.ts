@@ -48,7 +48,7 @@ export const parliamentarianCountV2 = (votes: VOTE[], totalParliamentarian: numb
     sortNewRow.sort((a, b) => b.vote - a.vote);
     const winnerParty: PartyRowResult = sortNewRow[0];
 
-    console.log("winnerParty", winnerParty);
+    // console.log("winnerParty", winnerParty);
     const winnerRow: PartyRowResult | undefined = newRow.find((x) => x.partyId === winnerParty.partyId);
     if (winnerRow) {
       winnerRow.won = true;
