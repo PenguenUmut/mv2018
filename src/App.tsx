@@ -16,13 +16,11 @@ function App() {
   (window as any).parliamentarianCountV2 = parliamentarianCountV2;
 
   return (
-    <div>
-      <header>
-        {cities2.map((city, i) => (
-          <CityCard key={"cc" + i} city={city} />
-        ))}
-      </header>
-    </div>
+    <>
+      {cities2.map((city, i) => (
+        <CityCard key={"cc" + i} city={city} />
+      ))}
+    </>
   );
 }
 

@@ -1,17 +1,23 @@
+.city-card {
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 5px;
+  margin: 10px 5px;
+  padding: 5px;
+}
 .ctable {
   width: 100%;
 }
 .c1 {
-  width: 15%;
+  width: 25%;
 }
 .c2 {
-  width: 10%;
+  width: 15%;
 }
 .c3 {
-  width: 75%;
-
+  width: 60%;
   border: 1px solid #00a30722;
-  background: #00000022;
+  /* background: #00000022; */
 }
 .c3_bar {
   background-color: rgb(43, 147, 43);
@@ -82,21 +88,26 @@
 .bold {
   font-weight: bold;
 }
+
+.table-scroll {
+  overflow-y: auto;
+}
 .ctable3 {
   width: 100%;
   border: 1px solid #80808080;
   border-radius: 5px;
   font-size: 1rem;
+  padding: 10px 5px;
 }
 .ctable3 .won {
   color: #db0000;
 }
 .ctable3 .mvcount {
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   font-weight: bold;
 }
 .ctable3 .mvvotecount {
-  font-size: 1.25rem;
+  /* font-size: 1.25rem; */
   font-weight: bold;
 }
 

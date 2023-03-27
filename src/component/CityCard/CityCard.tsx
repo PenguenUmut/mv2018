@@ -52,7 +52,7 @@ export const CityCard: React.FC<{ city: CITY_TOTAL }> = ({ city }) => {
   }, [residualVotesCount, totalVoters]);
 
   return (
-    <div style={{ borderWidth: 1, borderStyle: "solid", borderRadius: 10, margin: 15, padding: 15 }}>
+    <div className="city-card">
       <h2>
         {city.name} ({city.parliamentarianCount} mv x {minVoteCount} oy)
       </h2>
@@ -138,59 +138,61 @@ export const CityCard: React.FC<{ city: CITY_TOTAL }> = ({ city }) => {
       </table>
       <br />
 
-      <table className="ctable3">
-        <thead>
-          <tr>
-            <td className="center">
-              <b>Milletvekili</b>
-            </td>
-            {voteParliamentarians[0].map((x) => (
-              <td className={"center " + x.partyName}>
-                <b>{x.partyName}</b>
+      <div className="table-scroll">
+        <table className="ctable3">
+          <thead>
+            <tr>
+              <td className="center">
+                <b>Milletvekili</b>
               </td>
-            ))}
-          </tr>
-        </thead>
-        <tbody>
-          {voteParliamentarians.map((row, i) => (
-            <tr key={"keyi" + i}>
-              <td className="center bold">{i + 1}.</td>
-              {row.map((c, j) => (
-                <td key={"keyj" + j} className={c.won ? "right won bold" : "right"}>
-                  {c.vote}
+              {voteParliamentarians[0].map((x) => (
+                <td className={"center " + x.partyName}>
+                  <b>{x.partyName}</b>
                 </td>
               ))}
             </tr>
-          ))}
-
-          <tr>
-            <td className="center bold">MV Başına Oy</td>
-            {voteParliamentarians[0].map((x) => (
-              <td className="right won">
-                <span className="mvvotecount">{voteParliamentarians.reduce((p, c) => c.find((o) => o.partyId === x.partyId && o.won)?.vote || p, 0) || ""}</span>
-              </td>
+          </thead>
+          <tbody>
+            {voteParliamentarians.map((row, i) => (
+              <tr key={"keyi" + i}>
+                <td className="center bold">{i + 1}.</td>
+                {row.map((c, j) => (
+                  <td key={"keyj" + j} className={c.won ? "right won bold" : "right"}>
+                    {c.vote}
+                  </td>
+                ))}
+              </tr>
             ))}
-          </tr>
 
-          <tr>
-            <td className="center bold">MV Sayısı</td>
-            {voteParliamentarians[0].map((x) => (
-              <td className="right">
-                <span className="mvcount">{voteParliamentarians.reduce((p, c) => p + c.filter((o) => o.partyId === x.partyId && o.won).length, 0) || ""}</span>
-              </td>
-            ))}
-          </tr>
+            <tr>
+              <td className="center bold">MV Başına Oy</td>
+              {voteParliamentarians[0].map((x) => (
+                <td className="right won">
+                  <span className="mvvotecount">{voteParliamentarians.reduce((p, c) => c.find((o) => o.partyId === x.partyId && o.won)?.vote || p, 0) || ""}</span>
+                </td>
+              ))}
+            </tr>
 
-          <tr>
-            <td className="center bold">Artık Oy</td>
-            {residualVotes.map((x) => (
-              <td className="right">
-                <span className="rscount">{x}</span>
-              </td>
-            ))}
-          </tr>
-        </tbody>
-      </table>
+            <tr>
+              <td className="center bold">MV Sayısı</td>
+              {voteParliamentarians[0].map((x) => (
+                <td className="right">
+                  <span className="mvcount">{voteParliamentarians.reduce((p, c) => p + c.filter((o) => o.partyId === x.partyId && o.won).length, 0) || ""}</span>
+                </td>
+              ))}
+            </tr>
+
+            <tr>
+              <td className="center bold">Artık Oy</td>
+              {residualVotes.map((x) => (
+                <td className="right">
+                  <span className="rscount">{x}</span>
+                </td>
+              ))}
+            </tr>
+          </tbody>
+        </table>
+      </div>
     </div>
   );
 };
