@@ -143,6 +143,16 @@ export const CityCard: React.FC<{ city: CITY_TOTAL }> = ({ city }) => {
           <thead>
             <tr>
               <td className="center">
+                <b></b>
+              </td>
+              {voteParliamentarians[0].map((x) => (
+                <td className="center">
+                  <b>%{Math.round(100 * ((x.vote * 100) / votesValid)) / 100}</b>
+                </td>
+              ))}
+            </tr>
+            <tr>
+              <td className="center">
                 <b>Milletvekili</b>
               </td>
               {voteParliamentarians[0].map((x) => (

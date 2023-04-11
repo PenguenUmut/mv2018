@@ -233,7 +233,7 @@ export const cities1: CITY[] = [
     // bagimsiz_toplam_oy: 1285,
     union1Vote: 12237,
     union2Vote: 4499,
-    parliamentarianCount: 16,
+    parliamentarianCount: 17,
   },
   {
     id: 75,
@@ -636,7 +636,7 @@ export const cities1: CITY[] = [
     // bagimsiz_toplam_oy: 573,
     union1Vote: 5282,
     union2Vote: 2083,
-    parliamentarianCount: 8,
+    parliamentarianCount: 7,
   },
   {
     id: 21,
@@ -799,7 +799,7 @@ export const cities1: CITY[] = [
     // bagimsiz_toplam_oy: 277,
     union1Vote: 5145,
     union2Vote: 2149,
-    parliamentarianCount: 7,
+    parliamentarianCount: 6,
   },
   {
     id: 27,
@@ -1323,7 +1323,7 @@ export const cities1: CITY[] = [
     // bagimsiz_toplam_oy: 500,
     union1Vote: 12151,
     union2Vote: 3111,
-    parliamentarianCount: 13,
+    parliamentarianCount: 14,
   },
   {
     id: 42,
@@ -1504,7 +1504,7 @@ export const cities1: CITY[] = [
     // bagimsiz_toplam_oy: 0,
     union1Vote: 584,
     union2Vote: 94,
-    parliamentarianCount: 4,
+    parliamentarianCount: 3,
   },
   {
     id: 50,
@@ -1638,7 +1638,7 @@ export const cities1: CITY[] = [
     // bagimsiz_toplam_oy: 0,
     union1Vote: 7898,
     union2Vote: 1352,
-    parliamentarianCount: 7,
+    parliamentarianCount: 8,
   },
   {
     id: 55,
@@ -1799,7 +1799,7 @@ export const cities1: CITY[] = [
     // bagimsiz_toplam_oy: 229,
     union1Vote: 4394,
     union2Vote: 2168,
-    parliamentarianCount: 7,
+    parliamentarianCount: 8,
   },
   {
     id: 60,
@@ -1868,7 +1868,7 @@ export const cities1: CITY[] = [
     // bagimsiz_toplam_oy: 15,
     union1Vote: 170,
     union2Vote: 51,
-    parliamentarianCount: 2,
+    parliamentarianCount: 1,
   },
   {
     id: 64,
